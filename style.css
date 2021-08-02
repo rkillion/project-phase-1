@@ -1,0 +1,17 @@
+header, #selection-area {
+    display: block;
+    /*width: 400px; 
+    margin-left: auto;
+    margin-right: auto; */
+    border: 2px solid black;
+    text-align: center;
+}
+
+#main-header {
+    background: linear-gradient(lightblue,orange);
+}
+
+form {
+    padding: 10px;
+    background: orange;
+}
