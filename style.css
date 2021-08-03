@@ -1,10 +1,17 @@
+h1 {
+    margin: 0px;
+    padding: 30px;
+}
+
 header, #selection-area {
     display: block;
     /*width: 400px; 
     margin-left: auto;
-    margin-right: auto; */
-    border: 2px solid black;
+    margin-right: auto; 
+    border: 2px solid black;*/
     text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 #main-header {
@@ -12,6 +19,7 @@ header, #selection-area {
 }
 
 form {
-    padding: 10px;
+    padding-top: 0px;
+    padding-bottom: 30px;
     background: orange;
 }

@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded",()=> {
-
+    console.log(key);
 })
 
 //-----Write a function to get photographs from the api
