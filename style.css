@@ -23,3 +23,28 @@ form {
     padding-bottom: 30px;
     background: orange;
 }
+
+#gallery-area {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background: orange;
+}
+
+.photo-post {
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    background: lightblue;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.photo-post img {
+    width: 200px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
