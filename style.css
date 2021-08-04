@@ -1,10 +1,32 @@
+body {
+    margin: 0px;
+    background: orange;
+}
+
+h1 {
+    margin: 0px;
+    padding: 30px;
+}
+
 header, #selection-area {
     display: block;
     /*width: 400px; 
     margin-left: auto;
-    margin-right: auto; */
-    border: 2px solid black;
+    margin-right: auto; 
+    border: 2px solid black;*/
     text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#selection-information {
+    margin: 0px;
+    background: rgb(61, 180, 91);
+}
+
+#selection-information p {
+    margin: 0px;
+    padding: 10px;
 }
 
 #main-header {
@@ -12,6 +34,34 @@ header, #selection-area {
 }
 
 form {
-    padding: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     background: orange;
 }
+
+#gallery-area {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background: orange;
+}
+
+.photo-post {
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    background: lightblue;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.photo-post img {
+    width: 200px;
+    height: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
