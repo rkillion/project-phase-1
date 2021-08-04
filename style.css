@@ -1,3 +1,8 @@
+body {
+    margin: 0px;
+    background: orange;
+}
+
 h1 {
     margin: 0px;
     padding: 30px;
@@ -14,13 +19,23 @@ header, #selection-area {
     margin-bottom: 0px;
 }
 
+#selection-information {
+    margin: 0px;
+    background: rgb(61, 180, 91);
+}
+
+#selection-information p {
+    margin: 0px;
+    padding: 10px;
+}
+
 #main-header {
     background: linear-gradient(lightblue,orange);
 }
 
 form {
-    padding-top: 0px;
-    padding-bottom: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     background: orange;
 }
 
@@ -30,6 +45,7 @@ form {
     width: auto;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    align-items: center;
     background: orange;
 }
 
@@ -44,6 +60,7 @@ form {
 
 .photo-post img {
     width: 200px;
+    height: auto;
     margin-top: 25px;
     margin-bottom: 25px;
 }

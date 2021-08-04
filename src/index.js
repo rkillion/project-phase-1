@@ -15,14 +15,7 @@ function getPixaPhotos(topic) {
 
 //-----Write a function that renders the photograph data on the page
 
-function testRender(photoData) {
-    let photo = document.createElement("img");
-    photo.src = photoData.hits[0].webformatURL;
-    console.log(photo.src);
-    document.getElementById("gallery-area").append(photo);
-}
-
-function renderPhotoPost(photoData){
+function renderPhotoPost(photoData) {
     let photoPost = document.createElement("div");
     photoPost.id = `post${photoData.id}`;
     photoPost.className = "photo-post";
