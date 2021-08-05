@@ -8,3 +8,4 @@ We will start with images from Pixabay, a photography api.
 
 1. The user can search for photographs by topic and receive back a gallery of images.
 2. The user can "like" images.
+3. The user can upload images from a url.
