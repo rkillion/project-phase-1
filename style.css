@@ -6,20 +6,48 @@ body {
 h1 {
     margin: 0px;
     padding: 30px;
+    font-size: 6rem;
 }
 
-header, #selection-area {
+header {
     display: block;
-    /*width: 400px; 
-    margin-left: auto;
-    margin-right: auto; 
-    border: 2px solid black;*/
     text-align: center;
     margin-top: 0px;
     margin-bottom: 0px;
 }
 
+#upload-get button{
+    width: 250px;
+    font-size: 2rem;
+    color: black;
+    background: lightblue;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+#return-button {
+    background: lightblue;
+    width: 35px;
+    display: none;
+    border-radius: 6px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#selection-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
 #selection-information {
+    display: none;
+    text-align: center;
     margin: 0px;
     background: rgb(61, 180, 91);
 }
@@ -34,24 +62,45 @@ header, #selection-area {
 }
 
 form {
+    display: none;
     padding-top: 15px;
     padding-bottom: 15px;
+    /* background: linear-gradient(lightblue,orange); */
     background: orange;
 }
 
+form select, form input {
+    font-size: 1.5rem;
+    color: black;
+    background: beige;
+    padding: 5px;
+    border-radius: 12px;
+}
+
+form button {
+    font-size: 1.5rem;
+    color: black;
+    background: rgb(61, 180, 91);
+    padding: 5px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
 #gallery-area {
-    display: flex;
+    display: none;
     flex-direction: row;
     width: auto;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    background: orange;
+    background: radial-gradient(closest-side,orangered,orange);
+    padding-bottom: 30px;
 }
 
 .photo-post {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 250px;
     background: lightblue;
     margin-top: 25px;
@@ -65,3 +114,51 @@ form {
     margin-bottom: 25px;
 }
 
+.photo-overlay {
+    display: flex;
+    position: absolute;
+    background: black;
+    opacity: 0;
+    z-index: 1;
+    width: 250px;
+    transition: opacity 1s;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.photo-overlay:hover {
+    opacity: .75;
+}
+
+.photo-overlay a {
+    color: lightblue;
+    margin: 5px;
+}
+
+.photo-overlay p {
+    color: beige;
+    margin: 5px;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    background: rgb(61, 180, 91);
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    z-index: 2;
+}
+
+footer p {
+    padding: 5px;
+    margin: 8px;
+}
+
+footer img {
+    width: 100px;
+}

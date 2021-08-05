@@ -11,13 +11,25 @@
         <header id="main-header">
             <h1>PhotoGallery</h1>
         </header>
+        <div id ="selection-information">
+            <p>What do you like to see in pictures? Do you like mountian scapes or animals in movement?</p>
+            <p> Do you like seeing a wide reciever catch a touchdown pass or a batter swing and hit a homerun?</p>
+            <p> Or do you love seeing hotrods or Ferraris or Lamborghinis?</p>
+            <p> Make your selection and enjoy the photos.</p>
+        </div>
         <div id="selection-area">
-            <div id ="selection-information">
-                <p>What do you like to see in pictures? Do you like mountian scapes or animals in movement?</p>
-                <p> Do you like seeing a wide reciever catch a touchdown pass or a batter swing and hit a homerun?</p>
-                <p> Or do you love seeing hotrods or Ferraris or Lamborghinis?</p>
-                <p> Make your selection and enjoy the photos.</p>
+            <div id="upload-get">
+                <button type="button" onclick="selectUpload();">Upload Photos</button>
+                <button type="button" onclick="selectGetPhotos();">Get Photos</button>
             </div>
+            <img id="return-button" src="return-button.png" alt="return">
+            <form action="" id="upload-form">
+                <input name="webformatURL" type="text" placeholder="Paste a URL">
+                <input name="user" type="text" placeholder="Photographer">
+                <input name="webformatWidth" type="text" placeholder="Width in px">
+                <input name="webformatHeight" type="text" placeholder="Height in px">
+                <button type="submit">Upload Photo</button>
+            </form>
             <form action="" id="images-request-form">
                 <select name="topic" id="topic-selection">
                     <option value="" disabled selected hidden>Choose a topic</option>
@@ -33,5 +45,9 @@
         <div id="gallery-area">
             <!-- Create a sample card so we know what it should look like -->
         </div>
+        <footer>
+            <p>Photos courtesy of </p>
+            <a href="https://pixabay.com/" target="_blank"><img src="https://pixabay.com/static/img/logo.png" alt=""></a>
+        </footer>
     </body>
 </html>
