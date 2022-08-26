@@ -1,5 +1,7 @@
 let newIDNum = 0;
 
+const key = "22718027-20fc84a3c87d4dbf9a7a7b894";
+
 document.addEventListener("DOMContentLoaded",()=> {
     document.getElementById("images-request-form").addEventListener("submit",e=>{
         e.preventDefault();
@@ -19,6 +21,8 @@ document.addEventListener("DOMContentLoaded",()=> {
         renderPhotoPost(photo);
         e.target.reset();
     });
+
+    
     getPixaPhotos("");
 })
 
